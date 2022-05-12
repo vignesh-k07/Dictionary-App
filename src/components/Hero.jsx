@@ -59,7 +59,7 @@ const Hero = () => {
       <div className={styles.resultContainer}>
         {isDone && (
           <>
-            <h2 className={styles.resultWord}>{data.word.toUpperCase()}</h2>
+            <h2 className={styles.resultWord}>{data.word}</h2>
             <p className={styles.resultDefinition}>
               {data.meanings[0].definitions[0].definition}
             </p>
@@ -67,7 +67,7 @@ const Hero = () => {
         )}
         {error && (
           <>
-            <h2 className={styles.resultWord}>{error.title.toUpperCase()}</h2>
+            <h2 className={styles.resultWord}>{error.title}</h2>
             <p className={styles.resultDefinition}>
               {error.message}
             </p>
